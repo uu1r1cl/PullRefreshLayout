@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/pull_refresh_header_height"
+    android:orientation="horizontal" >
+
+    <ProgressBar
+        android:id="@+id/progressbar_refresh"
+        style="?android:attr/progressBarStyleSmallInverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/pull_refresh_header_marginLeft"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageview_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/pull_refresh_header_marginLeft"
+        android:src="@drawable/arrow_down" />
+
+    <TextView
+        android:id="@+id/textview_instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/pull_refresh_header_height_half"
+        android:layout_centerHorizontal="true"
+        android:gravity="bottom"
+        android:singleLine="true"
+        android:text="@string/pull_to_refresh"
+        android:textSize="@dimen/pull_to_refresh_textSize" />
+
+    <TextView
+        android:id="@+id/textview_refresh_time"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/pull_refresh_header_height_half"
+        android:layout_below="@id/textview_instruction"
+        android:layout_centerHorizontal="true"
+        android:gravity="top"
+        android:textSize="@dimen/pull_to_refresh_textSize" />
+
+</RelativeLayout>

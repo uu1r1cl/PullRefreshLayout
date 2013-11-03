@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textview_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="#00ff00"
+        android:gravity="center"
+        android:text="@string/str_textview_title"
+        android:textSize="30sp" />
+
+    <com.dingji.pullrefreshlayout.PullRefreshLayout
+        android:id="@+id/layout_pull_refresh"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/textview_title" >
+
+        <ListView
+            android:id="@+id/listview_test"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none" >
+        </ListView>
+    </com.dingji.pullrefreshlayout.PullRefreshLayout>
+
+</RelativeLayout>

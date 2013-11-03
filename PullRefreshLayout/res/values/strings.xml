@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PullRefreshLayout</string>
+    <string name="action_settings">Settings</string>
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">释放可以刷新</string>
+    <string name="refreshing">加载中...</string>
+    <string name="refresh_at">更新于：</string>
+    <string name="str_btn_change_instruction">Change Instruction</string>
+    <string name="str_tv_instruction">测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</string>
+    <string name="str_textview_title">标题标题标题标题</string>
+    <string name="str_btn_test">测试</string>
+
+</resources>
